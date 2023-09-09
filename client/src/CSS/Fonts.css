@@ -1,0 +1,44 @@
+@font-face {
+    font-family: Exo;
+    src: url('../Fonts/Exo2-VariableFont_wght.ttf');
+}
+
+.Exo {
+    font-family: Exo;
+}
+
+@font-face {
+    font-family: JosefinSans;
+    src: url('../Fonts/JosefinSans-Italic-VariableFont_wght.ttf');
+}
+
+.JosefinSans {
+    font-family: JosefinSans;
+}
+
+@font-face {
+    font-family: overpass;
+    src: url('../Fonts/Overpass-VariableFont_wght.ttf');
+}
+
+.overpass {
+    font-family: overpass;
+}
+
+@font-face {
+    font-family: cursive;
+    src: url('../Fonts/CedarvilleCursive-Regular.ttf');
+}
+
+.cursive {
+    font-family: cursive;
+}
+
+@font-face {
+    font-family: Tru;
+    src: url(../Fonts/Truculenta-VariableFont_opsz\,wdth\,wght.ttf);
+}
+
+.Tru {
+    font-family: Tru;
+}
