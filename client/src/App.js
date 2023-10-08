@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./layout";
 import { UserContextProvider } from "./UserContext.js";
 import Contact from "./scenes/Contact.jsx";
+import Projects from "./scenes/Projects.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<Projects />} />
           {/* Additional routes */}
         </Route>
       </Routes>

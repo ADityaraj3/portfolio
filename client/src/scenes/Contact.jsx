@@ -123,12 +123,47 @@ const Contact = () => {
         marginRight:'100px',
         color: '#000',
         marginLeft:'-100px',
+        marginTop: '79px'
       };
 
       const toMargin = {
         marginLeft: '650px',
         marginTop: '-60px'
-      }
+      };
+
+      const emailFelx = {
+        display: "flex",
+        justifyContent: "flex-start", // Adjust the alignment as needed
+        alignItems: "center",
+      };
+
+      const emailStyle = {
+        marginLeft: '-150px',
+        marginTop: '-355px',
+      };
+
+      const conStyle = {
+        fontSize: '26px'
+      };
+
+      const emailNameStyle = {
+        marginTop:'-18px',
+        marginLeft: '-210px',
+        fontSize: '20px'
+      };
+
+      const emailIconStyle = {
+        display: 'block',
+        padding:'10px',
+        marginRight:'100px',
+        color: '#000',
+        marginLeft:'-125px',
+      };
+    
+      const emailIconSize = {
+        width: '35px', // Set the width to increase the icon's size
+        height: '35px', // Set the height to increase the icon's size
+      };
 
    return(
     <div style={bg}>
@@ -144,6 +179,8 @@ const Contact = () => {
             
         </div>
         <div style={verticalLine}>
+            <div style={emailFelx}>
+            <div>
             <div style={nameStyle}>
             <input 
                 type="text"
@@ -154,7 +191,6 @@ const Contact = () => {
                 onChange={(e)=>setName(e.target.value)}
                 />
             </div>
-
             <div style={nameStyle}>
             <input 
                 type="text"
@@ -176,6 +212,10 @@ const Contact = () => {
                     onChange={(e)=>setMessage(e.target.value)}
                 />
             </div>
+            
+            </div>
+            </div>
+            
             <div style={toFlexSocails}>
             <div>
                 <button style={buttonStyle} onClick={handleSubmit} className="Exo">
@@ -183,6 +223,17 @@ const Contact = () => {
                 </button>
             </div>
             <div style={toMargin}>
+            <div style={emailStyle}>
+                <p className="overpass" style={conStyle}>Contact</p>
+            </div>
+            <div style={emailNameStyle}>
+                adityasraj123@gmail.com
+            </div>
+            <a href="mailto:adityasraj123@gmail.com?subject=Hello%20Aditya">
+                <svg style={{ ...emailIconStyle, ...emailIconSize }} xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                </svg>
+            </a>
             <div style={socailMedia}>
                 <a href="https://twitter.com/adityaraj168386">
                 <svg style={socailMedia} xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">

@@ -21,8 +21,8 @@ const About = () => {
         marginLeft: '20px',
         maxWidth: "25%",
         height: "auto",
-        border: '20px solid #808080',
-        
+        border: '5px solid white',
+        zIndex:'1000',
       };
     
       const imageStyleRight = {
@@ -30,7 +30,8 @@ const About = () => {
         marginRight: '200px',
         maxWidth: "25%",
         height: "auto",
-        border: '20px solid #808080',
+        border: '5px solid white',
+        zIndex:'1000',
       }
 
       const textStyleLeft = {
@@ -59,13 +60,28 @@ const About = () => {
 
       const textQuote = {
         fontSize: '19px',
-      }
+      };
+
+      
+
+      const halfOverlay = {
+        position: "absolute",
+        backgroundColor: 'rgba(0, 0, 0, 0.5)', // Adjust the color and opacity here
+        top: 120,
+        bottom: 150,
+        left: 280,
+        width: "21%", // Cover half of the image
+      };
     
+      
+
 
       return (
         <div style={bg}>
           <div style={sectionStyle}>
+            
             <img src={Image1} alt="Image 1" style={imageStyleLeft} />
+            <div style={halfOverlay}></div> {/* Add this overlay div */}
             <div style={textStyleLeft}>
               <h3 className="JosefinSans" style={headStyle}>Techincal Aditya</h3>
               <p className="overpass">
